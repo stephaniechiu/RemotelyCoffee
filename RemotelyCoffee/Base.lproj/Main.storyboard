@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GlG-vB-Tvp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qEA-gs-qaH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -40,16 +40,16 @@
             </objects>
             <point key="canvasLocation" x="2321.739130434783" y="-614.0625"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Coffee Shop Table View Controller-->
         <scene sceneID="NRc-hK-fAO">
             <objects>
-                <tableViewController id="3tm-5h-SNy" sceneMemberID="viewController">
+                <tableViewController id="3tm-5h-SNy" customClass="CoffeeShopTableViewController" customModule="RemotelyCoffee" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yge-Lx-Gbm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="229" id="mFE-Dr-NZS">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="229" id="mFE-Dr-NZS" customClass="CoffeeTableViewCell" customModule="RemotelyCoffee" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="229"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mFE-Dr-NZS" id="s1W-mk-vg9">
@@ -68,7 +68,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-Jx-Mh4">
                                                             <rect key="frame" x="0.0" y="183" width="374" height="24"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="251" text="Cafe Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeA-rZ-99R">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="251" text="Coffee Shop Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeA-rZ-99R">
                                                                     <rect key="frame" x="0.0" y="0.0" width="281" height="24"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -114,6 +114,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="coffeeShopImageView" destination="45i-Ah-5Qc" id="58T-st-kzt"/>
+                                    <outlet property="coffeeShopNameLabelMain" destination="jeA-rZ-99R" id="kK1-Sq-EaJ"/>
+                                    <outlet property="locationLabel" destination="Zyn-HX-uSi" id="kHi-0N-lNC"/>
+                                    <outlet property="makerImageView" destination="Od2-z2-T8Z" id="fEr-HF-jOe"/>
                                     <segue destination="GlG-vB-Tvp" kind="show" id="nrZ-Kc-FBf"/>
                                 </connections>
                             </tableViewCell>
@@ -132,11 +136,11 @@
             </objects>
             <point key="canvasLocation" x="2479.7101449275365" y="53.571428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Details Coffee View Controller-->
         <scene sceneID="gM8-AF-cMV">
             <objects>
-                <viewController id="GlG-vB-Tvp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ddg-br-iNE">
+                <viewController id="GlG-vB-Tvp" customClass="DetailsCoffeeViewController" customModule="RemotelyCoffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ddg-br-iNE" customClass="DetailsCoffeeView" customModule="RemotelyCoffee" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1107"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -174,10 +178,17 @@
                                                 <rect key="frame" x="0.0" y="250" width="414" height="177"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="BTu-es-nLW">
-                                                        <rect key="frame" x="16" y="16" width="382" height="145"/>
+                                                        <rect key="frame" x="16" y="16" width="382" height="148"/>
                                                         <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COFFEE SHOP NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8p-vT-mVF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="24"/>
+                                                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ibx-Fd-mfE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="31"/>
+                                                                <rect key="frame" x="0.0" y="31" width="382" height="24"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IC Attach Money 24px" translatesAutoresizingMaskIntoConstraints="NO" id="BiU-MB-X5S">
                                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -195,7 +206,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pgg-iW-iOs">
-                                                                <rect key="frame" x="0.0" y="38" width="382" height="31"/>
+                                                                <rect key="frame" x="0.0" y="62" width="382" height="24"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IC Query Builder 24px" translatesAutoresizingMaskIntoConstraints="NO" id="XzO-om-o3W">
                                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -213,7 +224,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cYY-nd-TvZ">
-                                                                <rect key="frame" x="0.0" y="76" width="382" height="31"/>
+                                                                <rect key="frame" x="0.0" y="93" width="382" height="24"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IC Star 24px" translatesAutoresizingMaskIntoConstraints="NO" id="6ql-u2-FZF">
                                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -231,7 +242,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Sb-Nz-r6c">
-                                                                <rect key="frame" x="0.0" y="114" width="382" height="31"/>
+                                                                <rect key="frame" x="0.0" y="124" width="382" height="24"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IC Store 24px" translatesAutoresizingMaskIntoConstraints="NO" id="ohy-OY-8ab">
                                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -254,7 +265,6 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="BTu-es-nLW" firstAttribute="top" secondItem="y07-K6-NXI" secondAttribute="top" constant="16" id="M2Z-Aj-3bz"/>
-                                                    <constraint firstAttribute="bottom" secondItem="BTu-es-nLW" secondAttribute="bottom" constant="16" id="POo-X4-LTG"/>
                                                     <constraint firstItem="BTu-es-nLW" firstAttribute="leading" secondItem="y07-K6-NXI" secondAttribute="leading" constant="16" id="RBi-Y3-b9m"/>
                                                     <constraint firstAttribute="trailing" secondItem="BTu-es-nLW" secondAttribute="trailing" constant="16" id="gCh-dn-bZk"/>
                                                     <constraint firstAttribute="height" constant="177" id="xD0-qy-Z0H"/>
@@ -293,6 +303,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="b0a-vM-Rsu"/>
+                        <connections>
+                            <outlet property="coffeeShopNameLabel" destination="L8p-vT-mVF" id="U3d-hV-adK"/>
+                            <outlet property="collectionView" destination="WEk-BE-fWF" id="sE8-wD-mnj"/>
+                            <outlet property="hoursLabel" destination="hON-GE-bCc" id="mtw-hS-UDR"/>
+                            <outlet property="locationLabel" destination="A28-BA-wdj" id="N26-bE-dVQ"/>
+                            <outlet property="mapViewLabel" destination="mGd-Ox-d7g" id="UHK-va-Bax"/>
+                            <outlet property="pageControl" destination="shR-8X-2Dr" id="F8b-Q0-TKj"/>
+                            <outlet property="priceLabel" destination="8ha-wQ-Eub" id="nvX-Cj-T2B"/>
+                            <outlet property="ratingsLabel" destination="b3r-Hr-vgX" id="UVq-U9-Zck"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="mXs-bI-IAb">
                         <barButtonItem key="leftBarButtonItem" systemItem="redo" id="geg-C5-bwf">
