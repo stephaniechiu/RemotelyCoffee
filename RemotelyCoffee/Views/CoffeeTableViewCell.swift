@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class CoffeeTableViewCell: UITableViewCell {
     @IBOutlet weak var coffeeShopImageView: UIImageView!
@@ -24,5 +25,9 @@ class CoffeeTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    func configure(with viewModel: CoffeeShopListViewModel) {
+        coffeeShopImageView.af_setImage(withURL: viewModel.imageUrl)
+        coffeeShopNameLabelMain.text = viewModel.name
+        locationLabel.text = viewModel.distance
+    }
 }

@@ -10,7 +10,11 @@ import UIKit
 import CoreLocation
 
 class CoffeeShopTableViewController: UITableViewController, CLLocationManagerDelegate {
-
+    var viewModels = [CoffeeShopListViewModel]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -42,32 +46,20 @@ class CoffeeShopTableViewController: UITableViewController, CLLocationManagerDel
         print(error)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+ override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+    return viewModels.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeShopCell", for: indexPath) as! CoffeeTableViewCell
+        
+        let vm = viewModels[indexPath.row]
+        cell.configure(with: vm)
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

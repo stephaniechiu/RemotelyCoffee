@@ -49,7 +49,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="229" id="mFE-Dr-NZS" customClass="CoffeeTableViewCell" customModule="RemotelyCoffee" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoffeeShopCell" rowHeight="229" id="mFE-Dr-NZS" customClass="CoffeeTableViewCell" customModule="RemotelyCoffee" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="229"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mFE-Dr-NZS" id="s1W-mk-vg9">
@@ -62,7 +62,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="apg-1s-LZC">
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="207"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="45i-Ah-5Qc">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="100" image="CoffeeShopImage" translatesAutoresizingMaskIntoConstraints="NO" id="45i-Ah-5Qc">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="173"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-Jx-Mh4">
@@ -83,7 +83,7 @@
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Od2-z2-T8Z">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marker" translatesAutoresizingMaskIntoConstraints="NO" id="Od2-z2-T8Z">
                                                                             <rect key="frame" x="35" y="0.0" width="24" height="24"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="24" id="BXr-yq-iep"/>
@@ -328,7 +328,7 @@
         <!--Item-->
         <scene sceneID="OXB-3t-U82">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="124-IY-H4e" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CoffeeShopListNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="124-IY-H4e" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="w4N-i8-Q1m"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="NLd-cn-NQy">
@@ -369,9 +369,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CoffeeShopImage" width="972" height="433"/>
         <image name="IC Attach Money 24px" width="11" height="18"/>
         <image name="IC Query Builder 24px" width="20" height="20"/>
         <image name="IC Star 24px" width="20" height="19"/>
         <image name="IC Store 24px" width="18" height="15"/>
+        <image name="marker" width="24" height="24"/>
     </resources>
 </document>

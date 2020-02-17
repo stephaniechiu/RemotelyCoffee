@@ -21,6 +21,7 @@
 		90EF766123F91A2000D733BB /* CoffeeShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF766023F91A2000D733BB /* CoffeeShopTableViewController.swift */; };
 		90EF766823FA1FB900D733BB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90EF766723FA1FB900D733BB /* Podfile */; };
 		90EF767D23FA318400D733BB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF767C23FA318400D733BB /* NetworkService.swift */; };
+		90EF769823FA5D5A00D733BB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF769723FA5D5A00D733BB /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		90EF766923FA208F00D733BB /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		90EF767C23FA318400D733BB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		90EF768023FA337800D733BB /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		90EF769723FA5D5A00D733BB /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		C3EA040BB18CD8DC3B2038FC /* Pods-RemotelyCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemotelyCoffee.debug.xcconfig"; path = "Target Support Files/Pods-RemotelyCoffee/Pods-RemotelyCoffee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +210,7 @@
 			children = (
 				90EF765523F90A1F00D733BB /* Views */,
 				90EF766023F91A2000D733BB /* CoffeeShopTableViewController.swift */,
+				90EF769723FA5D5A00D733BB /* Models.swift */,
 			);
 			name = "Coffee Shop List";
 			sourceTree = "<group>";
@@ -223,11 +226,11 @@
 		90EF766A23FA208F00D733BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90EF767223FA208F00D733BB /* libAlamofire.a */,
-				90EF767423FA208F00D733BB /* libAlamofireImage.a */,
-				90EF767623FA208F00D733BB /* libMoya.a */,
-				90EF767823FA208F00D733BB /* libPods-RemotelyCoffee.a */,
-				90EF767A23FA208F00D733BB /* libResult.a */,
+				90EF767223FA208F00D733BB /* Alamofire.framework */,
+				90EF767423FA208F00D733BB /* AlamofireImage.framework */,
+				90EF767623FA208F00D733BB /* Moya.framework */,
+				90EF767823FA208F00D733BB /* Pods_RemotelyCoffee.framework */,
+				90EF767A23FA208F00D733BB /* Result.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -327,35 +330,35 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		90EF767223FA208F00D733BB /* libAlamofire.a */ = {
+		90EF767223FA208F00D733BB /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
 			remoteRef = 90EF767123FA208F00D733BB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		90EF767423FA208F00D733BB /* libAlamofireImage.a */ = {
+		90EF767423FA208F00D733BB /* AlamofireImage.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AlamofireImage.framework;
 			remoteRef = 90EF767323FA208F00D733BB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		90EF767623FA208F00D733BB /* libMoya.a */ = {
+		90EF767623FA208F00D733BB /* Moya.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Moya.framework;
 			remoteRef = 90EF767523FA208F00D733BB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		90EF767823FA208F00D733BB /* libPods-RemotelyCoffee.a */ = {
+		90EF767823FA208F00D733BB /* Pods_RemotelyCoffee.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Pods_RemotelyCoffee.framework;
 			remoteRef = 90EF767723FA208F00D733BB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		90EF767A23FA208F00D733BB /* libResult.a */ = {
+		90EF767A23FA208F00D733BB /* Result.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Result.framework;
@@ -469,6 +472,7 @@
 				90EF765B23F910F000D733BB /* DetailsCoffeeViewController.swift in Sources */,
 				90EF765F23F9125800D733BB /* CoffeeTableViewCell.swift in Sources */,
 				90EF766123F91A2000D733BB /* CoffeeShopTableViewController.swift in Sources */,
+				90EF769823FA5D5A00D733BB /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
