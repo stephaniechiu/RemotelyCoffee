@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		704EB709E9A797B0E04BE686 /* Pods_RemotelyCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36040579C58606BB2DFD424D /* Pods_RemotelyCoffee.framework */; };
 		90EF763423F527DC00D733BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF763323F527DC00D733BB /* AppDelegate.swift */; };
 		90EF763623F527DC00D733BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF763523F527DC00D733BB /* SceneDelegate.swift */; };
 		90EF763823F527DC00D733BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF763723F527DC00D733BB /* ViewController.swift */; };
@@ -18,9 +19,86 @@
 		90EF765B23F910F000D733BB /* DetailsCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF765A23F910F000D733BB /* DetailsCoffeeViewController.swift */; };
 		90EF765F23F9125800D733BB /* CoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF765E23F9125800D733BB /* CoffeeTableViewCell.swift */; };
 		90EF766123F91A2000D733BB /* CoffeeShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF766023F91A2000D733BB /* CoffeeShopTableViewController.swift */; };
+		90EF766823FA1FB900D733BB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 90EF766723FA1FB900D733BB /* Podfile */; };
+		90EF767D23FA318400D733BB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF767C23FA318400D733BB /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		90EF767123FA208F00D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF766923FA208F00D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D797E9A5C5782CE845840781FA1CC81;
+			remoteInfo = Alamofire;
+		};
+		90EF767323FA208F00D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF766923FA208F00D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8498160B5D29EF2745E4D41F2D971B5;
+			remoteInfo = AlamofireImage;
+		};
+		90EF767523FA208F00D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF766923FA208F00D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3756A9BBE41ABEE8DCBF5BCA6972C4DA;
+			remoteInfo = Moya;
+		};
+		90EF767723FA208F00D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF766923FA208F00D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 037F223A5DA8273278905F7E39BD9FC5;
+			remoteInfo = "Pods-RemotelyCoffee";
+		};
+		90EF767923FA208F00D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF766923FA208F00D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0461B3F80FC05957690727254D64DB36;
+			remoteInfo = Result;
+		};
+		90EF768D23FA337800D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF768023FA337800D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5D797E9A5C5782CE845840781FA1CC81;
+			remoteInfo = Alamofire;
+		};
+		90EF768F23FA337800D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF768023FA337800D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8498160B5D29EF2745E4D41F2D971B5;
+			remoteInfo = AlamofireImage;
+		};
+		90EF769123FA337800D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF768023FA337800D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3756A9BBE41ABEE8DCBF5BCA6972C4DA;
+			remoteInfo = Moya;
+		};
+		90EF769323FA337800D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF768023FA337800D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 037F223A5DA8273278905F7E39BD9FC5;
+			remoteInfo = "Pods-RemotelyCoffee";
+		};
+		90EF769523FA337800D733BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90EF768023FA337800D733BB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0461B3F80FC05957690727254D64DB36;
+			remoteInfo = Result;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		36040579C58606BB2DFD424D /* Pods_RemotelyCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemotelyCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		743A5E56857F684D0DC56533 /* Pods-RemotelyCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemotelyCoffee.release.xcconfig"; path = "Target Support Files/Pods-RemotelyCoffee/Pods-RemotelyCoffee.release.xcconfig"; sourceTree = "<group>"; };
 		90EF763023F527DC00D733BB /* RemotelyCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemotelyCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90EF763323F527DC00D733BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90EF763523F527DC00D733BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +112,11 @@
 		90EF765A23F910F000D733BB /* DetailsCoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoffeeViewController.swift; sourceTree = "<group>"; };
 		90EF765E23F9125800D733BB /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = "<group>"; };
 		90EF766023F91A2000D733BB /* CoffeeShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopTableViewController.swift; sourceTree = "<group>"; };
+		90EF766723FA1FB900D733BB /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		90EF766923FA208F00D733BB /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		90EF767C23FA318400D733BB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		90EF768023FA337800D733BB /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		C3EA040BB18CD8DC3B2038FC /* Pods-RemotelyCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemotelyCoffee.debug.xcconfig"; path = "Target Support Files/Pods-RemotelyCoffee/Pods-RemotelyCoffee.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +124,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704EB709E9A797B0E04BE686 /* Pods_RemotelyCoffee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15CD0EE3CE1821EA4661A727 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA040BB18CD8DC3B2038FC /* Pods-RemotelyCoffee.debug.xcconfig */,
+				743A5E56857F684D0DC56533 /* Pods-RemotelyCoffee.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		90EF762723F527DB00D733BB = {
 			isa = PBXGroup;
 			children = (
+				90EF766723FA1FB900D733BB /* Podfile */,
 				90EF763223F527DC00D733BB /* RemotelyCoffee */,
 				90EF763123F527DC00D733BB /* Products */,
+				15CD0EE3CE1821EA4661A727 /* Pods */,
+				E0DEC1F92B3AA992D4A3D37F /* Frameworks */,
+				90EF766923FA208F00D733BB /* Pods.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +163,7 @@
 		90EF763223F527DC00D733BB /* RemotelyCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				90EF767B23FA315400D733BB /* Services */,
 				90EF764723F901CD00D733BB /* Screens */,
 				90EF763323F527DC00D733BB /* AppDelegate.swift */,
 				90EF763523F527DC00D733BB /* SceneDelegate.swift */,
@@ -122,6 +220,47 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		90EF766A23FA208F00D733BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90EF767223FA208F00D733BB /* libAlamofire.a */,
+				90EF767423FA208F00D733BB /* libAlamofireImage.a */,
+				90EF767623FA208F00D733BB /* libMoya.a */,
+				90EF767823FA208F00D733BB /* libPods-RemotelyCoffee.a */,
+				90EF767A23FA208F00D733BB /* libResult.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90EF767B23FA315400D733BB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				90EF767C23FA318400D733BB /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		90EF768123FA337800D733BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90EF768E23FA337800D733BB /* Alamofire.framework */,
+				90EF769023FA337800D733BB /* AlamofireImage.framework */,
+				90EF769223FA337800D733BB /* Moya.framework */,
+				90EF769423FA337800D733BB /* Pods_RemotelyCoffee.framework */,
+				90EF769623FA337800D733BB /* Result.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0DEC1F92B3AA992D4A3D37F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90EF768023FA337800D733BB /* Pods.xcodeproj */,
+				36040579C58606BB2DFD424D /* Pods_RemotelyCoffee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90EF764423F527E300D733BB /* Build configuration list for PBXNativeTarget "RemotelyCoffee" */;
 			buildPhases = (
+				54C2875517570B3B5309F6AD /* [CP] Check Pods Manifest.lock */,
 				90EF762C23F527DB00D733BB /* Sources */,
 				90EF762D23F527DB00D733BB /* Frameworks */,
 				90EF762E23F527DB00D733BB /* Resources */,
+				2F0BDE234A120F988AE43F13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,12 +309,95 @@
 			mainGroup = 90EF762723F527DB00D733BB;
 			productRefGroup = 90EF763123F527DC00D733BB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 90EF766A23FA208F00D733BB /* Products */;
+					ProjectRef = 90EF766923FA208F00D733BB /* Pods.xcodeproj */;
+				},
+				{
+					ProductGroup = 90EF768123FA337800D733BB /* Products */;
+					ProjectRef = 90EF768023FA337800D733BB /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				90EF762F23F527DB00D733BB /* RemotelyCoffee */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		90EF767223FA208F00D733BB /* libAlamofire.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 90EF767123FA208F00D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EF767423FA208F00D733BB /* libAlamofireImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireImage.framework;
+			remoteRef = 90EF767323FA208F00D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EF767623FA208F00D733BB /* libMoya.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Moya.framework;
+			remoteRef = 90EF767523FA208F00D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EF767823FA208F00D733BB /* libPods-RemotelyCoffee.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_RemotelyCoffee.framework;
+			remoteRef = 90EF767723FA208F00D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EF767A23FA208F00D733BB /* libResult.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = 90EF767923FA208F00D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EF768E23FA337800D733BB /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 90EF768D23FA337800D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EF769023FA337800D733BB /* AlamofireImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireImage.framework;
+			remoteRef = 90EF768F23FA337800D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EF769223FA337800D733BB /* Moya.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Moya.framework;
+			remoteRef = 90EF769123FA337800D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EF769423FA337800D733BB /* Pods_RemotelyCoffee.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_RemotelyCoffee.framework;
+			remoteRef = 90EF769323FA337800D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		90EF769623FA337800D733BB /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = 90EF769523FA337800D733BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		90EF762E23F527DB00D733BB /* Resources */ = {
@@ -182,11 +406,54 @@
 			files = (
 				90EF764023F527E300D733BB /* LaunchScreen.storyboard in Resources */,
 				90EF763D23F527E300D733BB /* Assets.xcassets in Resources */,
+				90EF766823FA1FB900D733BB /* Podfile in Resources */,
 				90EF763B23F527DC00D733BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F0BDE234A120F988AE43F13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemotelyCoffee/Pods-RemotelyCoffee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemotelyCoffee/Pods-RemotelyCoffee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RemotelyCoffee/Pods-RemotelyCoffee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54C2875517570B3B5309F6AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemotelyCoffee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90EF762C23F527DB00D733BB /* Sources */ = {
@@ -197,6 +464,7 @@
 				90EF763423F527DC00D733BB /* AppDelegate.swift in Sources */,
 				90EF763623F527DC00D733BB /* SceneDelegate.swift in Sources */,
 				90EF765923F90AD600D733BB /* DetailsCoffeeView.swift in Sources */,
+				90EF767D23FA318400D733BB /* NetworkService.swift in Sources */,
 				90EF764923F901FD00D733BB /* BaseView.swift in Sources */,
 				90EF765B23F910F000D733BB /* DetailsCoffeeViewController.swift in Sources */,
 				90EF765F23F9125800D733BB /* CoffeeTableViewCell.swift in Sources */,
@@ -342,6 +610,7 @@
 		};
 		90EF764523F527E300D733BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3EA040BB18CD8DC3B2038FC /* Pods-RemotelyCoffee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -360,6 +629,7 @@
 		};
 		90EF764623F527E300D733BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743A5E56857F684D0DC56533 /* Pods-RemotelyCoffee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

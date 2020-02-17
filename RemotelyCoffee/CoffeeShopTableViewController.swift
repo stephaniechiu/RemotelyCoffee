@@ -26,17 +26,17 @@ class CoffeeShopTableViewController: UITableViewController, CLLocationManagerDel
     }
 
 // MARK: - CL Location Manager
-        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-
-            if let location = locations.last {
-                let lat = location.coordinate.latitude
-                let lon = location.coordinate.longitude
-                print("location = \(lat) \(lon)")
+//        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//
+//            if let location = locations.last {
+//                let lat = location.coordinate.latitude
+//                let lon = location.coordinate.longitude
+//                print("location = \(lat) \(lon)")
 //            let userLocation = locations.last
 //            let viewRegion = MKCoordinateRegionMakeWithDistance((userLocation?.coordinate)!, 600, 600)
 //            self.map.setRegion(viewRegion, animated: true)
-            }
-        }
+//            }
+//        }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
